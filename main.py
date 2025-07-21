@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from model import Transliterator
 
 app = FastAPI()
-transliterator = Transliterator("../../Model/arabix-small")
+transliterator = Transliterator("HoussemDegachi/arabix-small")
 
 class TransliterateRequest(BaseModel):
     text: str
